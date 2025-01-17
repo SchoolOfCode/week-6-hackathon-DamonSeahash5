@@ -1,40 +1,47 @@
 import { test, expect, describe } from "vitest";
 import { whoAteAllThePies } from "./main.js";
 
-test("example scenario which should pass with valid inputs", () => {
-  const outcome = whoAteAllThePies(10, 2);
-  const expected = [5, false];
-  expect(outcome).toStrictEqual(expected);
-});
-
 describe("tests should pass if inputs are valid", () => {
-  //Assign
-  //Define the set of valid inputs for the test
-  //[bootcampers, slices, pies, canChrisFaisalNadeemComeToo]
   const validArray = [
     [10, 2, 5, false],
+    [10, 6, 2, false],
+    [50, 2, 25, false],
     [50, 6, 9, true],
+    [10, 2.0, 5, false],
   ];
   test.each(validArray)(
-    "Testing valid values",
+    "Testing valid values %i, %i",
     (bootcampers, slices, pies, canChrisFaisalNadeemComeToo) => {
-      //ACT
       const outcome = whoAteAllThePies(bootcampers, slices);
       const expected = [pies, canChrisFaisalNadeemComeToo];
-      //ASSERT
+
       expect(outcome).toStrictEqual(expected);
     }
   );
 });
 
 describe("should throw error if invalid input or inputs", () => {
-  //[bootcampers, slices]
   const invalidArray = [
+    [9, 1],
+    [9, 2],
     [10, 1],
-    [51, 5],
+    [9, 6],
+    [9, 7],
+    [10, 7],
+    [50, 1],
+    [51, 1],
+    [51, 2],
+    [50, 7],
+    [51, 6],
+    [51, 7],
+    // ["10", 2],
+    // [10, "ten"],
+    // [10.2, 2],
   ];
-
-  test.each(invalidArray)("testing invalid values", (bootcampers, slices) => {
-    expect(() => whoAteAllThePies(bootcampers, slices)).toThrowError();
-  });
+  test.each(invalidArray)(
+    "Testing invalid values %i %i",
+    (bootcampers, slices) => {
+      expect(() => whoAteAllThePies(bootcampers, slices)).toThrowError();
+    }
+  );
 });
