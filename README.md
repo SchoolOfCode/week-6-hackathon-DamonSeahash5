@@ -96,10 +96,10 @@ Before pushing your final kata repository, be sure to remove any solution code y
 Share it with following format:
 
 ```
-Room: REPLACE_ME_WITH_YOUR_ROOM_NUMBER
-Name: REPLACE_ME_WITH_YOUR_NAME
+Room: 14
+Name: Oliver Hopwood
 Link: REPLACE_ME_WITH_A_LINK_TO_YOUR_PUBLIC_GITHUB_REPO_CONTAINING_THE_KATA
-Overview: REPLACE_ME_WITH_A_BRIEF_DESCRIPTION_OF_WHAT_YOUR_KATA_IS_ABOUT
+Overview: A journey to a pie restaurant
 ```
 
 If it's not public already, remember to change the visibility of your repository to public.
@@ -111,4 +111,3 @@ Make sure you present your project in [the markdown file here](/PROJECT_PRESENTA
 ### 🎫 Ticket 7 - Complete katas from others
 
 To solve katas created by other bootcampers, first clone their repository using the shared link. `cd` into the folder, run `npm install` to get the dependencies, then implement a solution in main.js. Execute their test cases to validate your code against their requirements. Provide feedback on the clarity of their instructions, difficulty level, and effectiveness of the tests. Engaging with each other's challenges allows everyone to learn. Make sure to critique respectfully - creating a programming challenge is difficult!
-
