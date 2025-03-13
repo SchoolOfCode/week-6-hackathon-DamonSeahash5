@@ -98,7 +98,7 @@ Share it with following format:
 ```
 Room: 14
 Name: Oliver Hopwood
-Link: REPLACE_ME_WITH_A_LINK_TO_YOUR_PUBLIC_GITHUB_REPO_CONTAINING_THE_KATA
+Link: https://github.com/SchoolOfCode/week-6-hackathon-DamonSeahash5
 Overview: A journey to a pie restaurant
 ```
 

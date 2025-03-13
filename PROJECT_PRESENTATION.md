@@ -40,3 +40,10 @@ The example solution was run to check the tests were functioning correctly.
 ![Test Cases table](/images/Test%20Cases.JPG)
 
 Note on error handling - currently, error tests pass even with no error handling in function, just a return - must be default behaviour but need to look further into this.
+
+"Feedback for Ollie!
+Absolutely loved it, the tests are set up in such a way that it’s reaaaally easy to see where my function was failing, and which parts of the kata I need to create functionality for. The use of the interpolation into the titles of the test.each tests made it really easy to follow, and kept the tests super neat and concise.
+I saw that you’ve got some more tests commented out for inputting strings and decimals, would be cool to force the function to be even more specific, and I guess you could then add multiple different error messages for different errors (one for too many bootcampers, one for a decimal number of bootcampers, etc.)
+The way that you describe the kata is super useful too, I’m not very smart so usually have to read things a LOT for me to get a mental picture of what it’s asking for! But your kata makes sense straight away, and although there’s a few different things that the function has to handle, it’s really easy to follow along because the tests are so cleanly written. Well done, absolutely loved it and I’m absolutely going to eat 6 (not 7) slices of pie for lunch."
+
+- Luke Davies
